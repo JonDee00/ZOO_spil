@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo spillet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1> Zoo spillet </h1>
+        <h3>Giv dyrene mad </h3>
+
+       <!-- FOOD######## -->
+
+       <section id="foods">
+            <div class="foodcontainer">
+
+            <article id="f-1" draggable="true" data-food="fruit"><span class="food"></span>🍇 <audio src="audio/succes1_monkey.mp3" preload></audio></article>
+            <article id="f-9" draggable="true" data-food="meat"><span class="food"></span> 🍗<audio src="audio/succes1_lion.mp3" preload></audio></article>
+            <article id="f-4" draggable="true" data-food="grass"><span class="food"></span> 🥜 <audio src="audio/succes1_elephant.mp3" preload></audio></article>
+               
+            <article id="f-3" draggable="true" data-food="fruit"><span class="food"></span> 🍌 <audio src="audio/succes2_monkey.mp3" preload></audio> </article>
+            <article id="f-5" draggable="true" data-food="grass"><span class="food"></span> 🌿 <audio src="audio/succes2_elephant.mp3" preload></audio></article>
+            <article id="f-2" draggable="true" data-food="fruit"><span class="food"></span> 🍎 <audio src="audio/succes3_monkey.mp3" preload></audio> </article>
+                
+            <article id="f-8" draggable="true" data-food="meat"><span class="food"></span> 🥩 <audio src="audio/succes2_lion.mp3" preload></audio></article>
+            <article id="f-6" draggable="true" data-food="grass"><span class="food"></span> 🌱 <audio src="audio/succes3_elephant.mp3" preload></audio></article>
+            <article id="f-7" draggable="true" data-food="meat"><span class="food"></span> 🍖 <audio src="audio/succes3_lion.mp3" preload></audio></article>
+            
+            </div>
+        </section>
+
+        <!-- ANIMALS######## -->
+        
+        <section class="animal"> 
+          
+            <div id="lion" data-food="meat">
+                <p> 🐅 </p>  
+            </div>
+
+            <div id="monkey" data-food="fruit">
+                <p>🦍 </p> 
+            </div>
+
+            <div id="elephant" data-food="grass">
+                <p> 🐘 </p>   
+            </div>
+        
+            
+        </section>
+
+        <!-- MYCAGE######## -->
+
+        <section id="myCage">
+
+            <div id="myLion">  
+                <p> 🐅 </p>
+            </div>
+
+            <div id="myMonkey">
+                <p>🦍 </p>
+            </div>
+
+            <div>
+                <p id="myElephant"> 🐘 </p>
+            </div>
+       
+        </section>
+
+         <!-- BUTTONS######## -->
+        <section class="buttons">
+            <button class="catch" id="lionCatch"> Fang </button>
+            <button class="free" id="lionFree"> Befri </button>
+        </section>
+                 <audio src="audio/free.mp3" id="freeAudio"></audio>
+                 <audio src="audio/catch.mp3" id="catchAudio"></audio>
+                 
+                <audio src="audio/succes.mp3" id="succesAudio"></audio>
+                <audio src="audio/failure.mp3" id="failureAudio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
